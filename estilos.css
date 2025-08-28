@@ -1,0 +1,248 @@
+/* Navbar sanduíche em formato de carrinho branco */
+.navbar-dark .navbar-toggler {
+    border-color: white;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(../imgs/carro_menu_sanduiche.svg);
+    filter: brightnes0s(0) invert(1);
+    background-color: white;
+    color: rgb(185, 66, 66);
+}
+
+body {
+    background-color: rgb(214, 202, 202);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.paibaner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.baner {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.inicio {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.inicio h1 {
+    font-family: 'Great Vibes', cursive;
+    color: goldenrod;
+    font-size: 5rem;
+
+}
+
+.inicio h2 {
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+.sobre,
+.galeria,
+.contato,
+.cadastro {
+    padding: 3rem 1rem;
+}
+
+/*galeria/
+/* Estilizando o contêiner principal do carrossel */
+#carouselExampleIndicators {
+  width: 90%; /* Define uma largura personalizada */
+  max-width: 1200px; /* Garante que o carrossel não fique muito grande em telas largas */
+  margin: 0 auto; /* Centraliza o carrossel na página */
+  border-radius: 15px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para um efeito 3D */
+}
+
+/* Estilizando os botões de navegação (anterior e próximo) */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Reduz a área de clique para os botões */
+  color: #fff; /* Altera a cor dos ícones para branco */
+  transition: all 0.3s ease; /* Adiciona uma transição suave para o efeito de hover */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semi-transparente ao passar o mouse */
+  border-radius: 5px;
+}
+
+/* Estilizando os ícones de navegação (setas) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 25px; /* Aumenta o tamanho do ícone */
+  height: 25px; /* Aumenta o tamanho do ícone */
+  background-size: 100%, 100%; /* Garante que o ícone preencha o espaço */
+}
+
+/* Estilizando os indicadores (os "pontinhos" na parte inferior) */
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px; /* Aumenta o espaçamento entre os indicadores */
+  border-radius: 50%; /* Transforma os indicadores em círculos */
+  background-color: rgba(255, 255, 255, 0.5); /* Cor padrão dos indicadores */
+  border: 1px solid #fff; /* Adiciona uma borda branca */
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+  width: 15px;
+  height: 15px;
+  background-color: #fff; /* A cor do indicador ativo */
+  border: 1px solid #fff; /* Alinha a borda do indicador ativo */
+}
+
+/* Estilo para as imagens dentro do carrossel para garantir responsividade */
+.carousel-inner img {
+  border-radius: 15px; /* Arredonda as bordas das imagens para combinar com o carrossel */
+  height: auto;
+  max-height: auto; /* Define uma altura máxima para evitar imagens muito grandes */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+/* Estilo para telas menores (Responsividade) */
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10px;
+  }
+
+  .carousel-inner img {
+    max-height:auto
+    ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*formulario do cadastro*/
+.form_cad {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    /* gap: 100px; */
+    align-items:start;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    /* max-width: 200px; */
+    
+
+}
+#cadastro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    gap: 50px;
+    align-items: start;
+    
+}
+@media(width<800px) {
+    #cadastro {
+    
+        grid-template-columns: 1fr ;
+        
+        
+    }
+}
+
+
+/* Botão do Cadastro */
+.fizzy-button {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.fizzy-button input {
+    display: none;
+}
+
+.fizzy-button label.button_inner {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #1d1d1d, #883535);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.fizzy-button label.button_inner:hover {
+    background: linear-gradient(135deg, #9a9a9a, #bfbfbf);
+    transform: translateY(-3px);
+}
+
+.fizzy-button label .t {
+    position: relative;
+    z-index: 2;
+}
+
+.fizzy-button label .tick {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #00C1FC;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.fizzy-button input:checked+label .tick {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.b_l_quad .button_spots {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #00C1FC;
+    border-radius: 50%;
+    opacity: 0;
+    animation: spew 1s forwards;
+}
+
+@keyframes spew {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(30px, -30px) scale(0.5);
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
